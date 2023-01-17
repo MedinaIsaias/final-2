@@ -1,0 +1,29 @@
+<div class="container my-5">
+  <div class="container row justify-content-center">
+    <div class="col-auto">
+      <div class="card border-0" style="width: 38rem">
+        <!-- <i class="bi bi-cloud-arrow-up text-center"></i> -->
+        <div class="card-body">
+          <div class="m-2">
+            <!-- se captura el id y se hace un post a la ruta /api/products/q-->
+            <form action="/api/products/" method="POST">
+              <div class="input-group rounded">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Search Product ID"
+                  aria-label="Last name"
+                  name="id"
+                />
+
+                <button type="submit" class="btn btn-dark">
+                  <i class="bi bi-search" style="font-size: 15px"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

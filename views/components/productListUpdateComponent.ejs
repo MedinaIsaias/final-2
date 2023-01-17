@@ -1,0 +1,33 @@
+<!-- Se renderizan los items que se encuentran en el archivo.txt -->
+<div class="row justify-content-center my-5">
+  <% data.forEach(element => { %>
+  <!-- <div class="col-sm-4 m-3"> -->
+  <div class="card m-3" style="width: 18rem">
+    <img
+      src="https://images.unsplash.com/photo-1563201180-d98027da04f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title"><%= element.name %></h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
+      <p><b>price: <%= element.price %></b></p>
+      <p><b>ID: <%= element.id %></b></p>
+
+      <form
+        id="formProduct"
+        action="/api/products/update/<%= element.id %>"
+        method="GET"
+      >
+        <div class="col text-center">
+          <button type="submit" class="btn btn-dark mt-3">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- </div> -->
+  <% }) %>
+</div>

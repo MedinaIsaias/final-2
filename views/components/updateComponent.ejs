@@ -1,0 +1,46 @@
+<!-- Muestra campos de actualizacion solo si se realizo la busqueda de un item -->
+<% if(data.length == 1){ %>
+<div class="container row justify-content-center">
+  <div class="col-auto">
+    <div class="card bg-info shadow rounded" style="width: 38rem">
+      <h1 class="display-6 text-center text-dark my-2">Update Product</h1>
+      <i class="bi bi-cloud-arrow-up text-center"></i>
+      <div class="card-body">
+        <div class="m-2">
+          <form
+            id="formProduct"
+            action="/api/products/update/<%= data[0].id %>?_method=PUT"
+            method="POST"
+          >
+            <div class="row g-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Product name"
+                  aria-label="Product name"
+                  name="newName"
+                  id="productName"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Product price"
+                  aria-label="Last name"
+                  name="newPrice"
+                  id="productPrice"
+                />
+              </div>
+            </div>
+            <div class="col text-center">
+              <button type="submit" class="btn btn-dark mt-3">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% } %>

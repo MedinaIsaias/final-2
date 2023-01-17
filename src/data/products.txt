@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Teclado Midi - Arturia Micro Freak",
+    "price": 250,
+    "id": 1
+  },
+  {
+    "name": "Auriculares AKG240",
+    "price": 210,
+    "id": 2
+  },
+  {
+    "name": "Monitores KRK",
+    "price": 457,
+    "id": 3
+  },
+  {
+    "name": "Microfono Hyperx",
+    "price": 89,
+    "id": 4
+  },
+  {
+    "name": "Placa de sonido Focus Ride Scarlett",
+    "price": 140,
+    "id": 5
+  },
+  {
+    "name": "Korg Ms20 Mini Sintetizador Analógico Monofónico",
+    "price": 590,
+    "id": 6
+  },
+  {
+    "name": "Auriculares - Sony ",
+    "price": "400",
+    "id": 7
+  },
+  {
+    "name": "new",
+    "price": "400",
+    "id": 8
+  },
+  {
+    "name": "new",
+    "price": "45",
+    "id": 9
+  },
+  {
+    "name": "new",
+    "price": "45",
+    "id": 10
+  },
+  {
+    "name": "Auriculares - Sony ",
+    "price": "400",
+    "id": 11
+  },
+  
+]

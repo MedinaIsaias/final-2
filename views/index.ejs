@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('templates/header'); -%>
+  <style>
+    img {
+      opacity: 0.9;
+      width: 70%;
+      height: auto;
+    }
+  </style>
+  <body>
+    <%- include('templates/nav'); -%>
+    <div class="container contApp my-5">
+      <div class="jumbotron text-center border-bottom my-3">
+        <h1 class="display-4">bienvenido</h1>
+        
+      </div>
+      <div class="row my-5">
+        <div class="col">
+          <img
+            class="mx-auto d-block"
+            src="https://img.freepik.com/vector-gratis/fondo-poligonal-diseno-plano_23-2148920966.jpg?w=2000&t=st=1673999608~exp=1674000208~hmac=5a4b50c14c8119b06db6e1e1f4ddc310dfda83b7424e6b422fa5db92c78e877c"
+            alt="fondo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark"><%- include('./templates/footer'); -%></div>
+  </body>
+</html>

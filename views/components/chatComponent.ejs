@@ -1,0 +1,117 @@
+
+<style>
+
+i {
+      font-size: 3rem;
+      color: whitesmoke;
+    }
+    .bgForm {
+      width: 65%;
+      background: whitesmoke;
+      padding: 1.5rem;
+    }
+
+    .bgChat {
+      height: 300px;
+      background: #d6eff33a;
+    }
+    #scrollBox{
+      overflow-y: scroll;
+    }
+
+
+  .containerChat {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.containerChat::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.containerChat img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.containerChat img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+.userName-left {
+  float: left;
+  color: #2a6f97;
+  font-size: small;
+}
+.userName-right {
+  float: right;
+  color: #2a6f97;
+  font-size: small;
+}
+
+.time-right {
+  float: right;
+  color: #a47148;
+  font-size: x-small;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+  font-size: x-small;
+}
+</style>
+
+<!-- form -->
+<div class="container bgForm text-center rounded">
+    <form   id="formChat">
+      <div class="my-3">
+        <fieldset disabled>
+          <input
+          type="email"    
+          id="nameUser"
+          name="nombre"
+          placeholder="email"
+          value=""
+        />
+        </fieldset> 
+      </div>
+      <div class="mb-3">
+          <!-- Mensajes Chat -->
+        <div id="scrollBox" class="container bgChat my-3  shadow p-3 rounded" >
+        <div id="chatBox">
+            <!-- <p>Hola.. Aqui van los mensajes del chat</p>
+            <p>Hola.. Aqui van los mensajes del chat</p>
+            <p>Hola.. Aqui van los mensajes del chat</p> -->   
+        </div>
+        </div>
+       
+        <input
+          type="text"
+          placeholder="Message"
+          name="mensaje"
+          id="messageUser"
+          class="col-4"
+        ></input>
+       
+        <button type="submit" class="btn border ml-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+          <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+        </svg> </button>
+      </div>
+      
+    </form>
+  </div>
